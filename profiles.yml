@@ -1,0 +1,10 @@
+repo_snow_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: SYSADMIN
+      warehouse: DBT_LEARNING_WH
+      database: DBT_LEARNING_DB
+      schema: LEARNING
+      threads: 8

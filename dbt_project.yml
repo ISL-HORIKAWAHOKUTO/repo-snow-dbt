@@ -1,0 +1,19 @@
+name: repo_snow_dbt
+version: 1.0.0
+config-version: 2
+profile: repo_snow_dbt
+model-paths:
+  - models
+analysis-paths:
+  - analyses
+test-paths:
+  - tests
+seed-paths:
+  - seeds
+macro-paths:
+  - macros
+snapshot-paths:
+  - snapshots
+models:
+  repo-snow-dbt:
+    +materialized: view
